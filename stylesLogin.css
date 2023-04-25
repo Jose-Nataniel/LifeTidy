@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    font-family: 'Istok Web', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4em;
+}
+
+#div-logo{
+    display: flex;
+    align-items: center;
+    margin-top: 6em;
+}
+
+#img-logo   {   
+    width: 70vw;
+    max-width: 380px;
+}
+
+fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#div-login-com-google{
+    display: flex;
+    width: 70vw;
+    max-width: 350px;
+    border-bottom: 1px solid #D9D9D9;
+    box-shadow: 0px 4px 4px -3px #cbcbcb;
+    padding-bottom: 0.5em;
+}
+
+#link-login-google{
+    display: flex;
+    text-decoration: none;
+}
+
+#img-google{
+    width: 1.8em;
+    height: 1.8em;
+}
+#login-com-google{
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    margin: 0;
+    font-weight: 700;
+    color: #3C3B3B;
+}
+
+.input-login{
+    width: 70vw;
+    max-width: 350px;
+    height: 3em;
+    font-weight: 700;
+    background: #D2EFFD;
+    border: none;
+    margin-top: 1.5em;
+    padding-left: 1em;
+    border-radius: 15px;
+}
+
+.input-login::placeholder{
+    color: #3C3B3B;
+    font-size: 15px;
+}
+
+#link-sem-cadastro{
+    text-decoration: none;
+    color: #5464F1;
+    margin-top: 3em;
+    font-size: 13px;
+}

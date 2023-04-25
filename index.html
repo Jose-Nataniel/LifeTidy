@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,500:1,700,900;1,700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+
+        <script
+            src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.6/index.global.min.js'></script>
+        <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth'
+        });
+        calendar.render();
+      });
+
+    </script>
+        <title>LifeTyde</title>
+    </head>
+    <body>
+        <header>
+            <nav class="nav-header">
+                <ul class="ul-header">
+                    <li class="li-header">
+                        <a class="links-header" href="index.html">
+                            <img class="img-nav" src="assets/config2.png"
+                                alt="icon-configuracoes" />
+                        </a>
+                    </li>
+                    <li class="li-header">
+                        <a id="link-logo" href="">
+                            <img class="img-nav" src="assets/logo2.png"
+                                alt="logo-LifeTidy" />
+                        </a>
+                    </li>
+                    <li class="li-header">
+                        <a class="links-header" href="login.html">
+                            <img class="img-nav" src="assets/perfil2.png"
+                                alt="icon-perfil" />
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="div-main">
+            <aside>
+                <nav id="nav-categorias">
+                    <ul id="ul-categorias">
+                        <li class="li-categorias">
+                            <a class="links-categorias" href="">
+                                <img class="img-categorias"
+                                    src="/assets/estudo2.png" alt="img-estudo">
+                                <h3>Estudo</h3>
+                            </a>
+                        </li>
+                        <li class="li-categorias">
+                            <a class="links-categorias" href="">
+                                <img class="img-categorias"
+                                    src="assets/compras2.png" alt="img-compras">
+                                <h3>Compras</h3>
+                            </a>
+                        </li>
+                        <li class="li-categorias">
+                            <a class="links-categorias" href="">
+                                <img class="img-categorias"
+                                    src="assets/viagem2.png"
+                                    alt="img-viagem">
+                                <h3>Viagem</h3>
+                            </a>
+                        </li>
+                        <li class="li-categorias">
+                            <a class="links-categorias" href="">
+                                <img class="img-categorias"
+                                    src="assets/saude2.png"
+                                    alt="img-saude">
+                                <h3>Saúde</h3>
+                            </a>
+                        </li>
+                        <li class="li-categorias">
+                            <a class="links-categorias" href="">
+                                <img class="img-categorias"
+                                    src="assets/agenda2.png"
+                                    alt="img-agenda">
+                                <h3>Agenda</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <main>
+                <div id="div-button">
+                    <input type="button" value="ADICIONAR LEMBRETE" name="">
+                    <input type="button" value="EDITAR LEMBRETE" name="">
+                    <input type="button" value="APAGAR LEMBRETE" name="">
+                    <input type="button" value="COMPARTILHAR" name="">
+                </div>
+                <div id="div-agenda">
+                    <h2 id="h2-agenda">AGENDA</h2>
+                    <div id="div-calendar">
+                        <div id='calendar'></div>
+                        <div id="div-lembreteFeriado">
+                            <h2 class="h2-lembreteFeriado">LEMBRETES</h2>
+                            <p>23/04 - TRABALHO DE PI</p>
+                            <P>24/04 - VISTORIA VEÍCULAR</P>
+                            <p>29/04 - ESTUDAR JAVA SCRIPT</p>
+                            <h2 class="h2-lembreteFeriado">FÉRIADOS</h2>
+                            <p>21/04 - TIRADENTES</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
